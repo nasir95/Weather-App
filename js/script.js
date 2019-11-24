@@ -12,7 +12,7 @@ $('form').on('submit', (event) =>{
         const userInput = $('input[type="text"]').val();
         $.ajax({ 
     //openweathermap current weather api
-            url: `api.openweathermap.org/data/2.5/weather?appid=81fc1487f09e04dba61c57f2c8c3a3ef&q=${userInput}&units=imperial&zip=${userInput}`,
+            url: `http://api.openweathermap.org/data/2.5/weather?appid=81fc1487f09e04dba61c57f2c8c3a3ef&q=${userInput}&units=imperial&zip=${userInput}`,
         
 
     //retrieve data
@@ -41,7 +41,7 @@ $('form').on('submit', (event) =>{
         const userInput = $('input[type="text"]').val();
         $.ajax({
     //openweathermap 5 day weather forecast api
-        url: `api.openweathermap.org/data/2.5/forecast?appid=81fc1487f09e04dba61c57f2c8c3a3ef&q=${userInput}&units=imperial&zip=${userInput}`
+        url: `http://api.openweathermap.org/data/2.5/forecast?appid=81fc1487f09e04dba61c57f2c8c3a3ef&q=${userInput}&units=imperial&zip=${userInput}`
 
     //retrieve data
         }).then(
