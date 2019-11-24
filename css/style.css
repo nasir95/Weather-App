@@ -1,0 +1,84 @@
+h1{
+    text-align: center;
+    color: #000; 
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    font-size: 30pt;
+    font-family: Arial, sans-serif;
+     
+}
+
+body,
+html {
+    min-height: 100%;
+}
+body{
+    background-image: url(../img/nice.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+    display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  }
+
+#city{
+    text-align: center;
+    text-align: center;
+    font-size: 3ch;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    max-width: 100px;
+    padding: 1rem;
+    color: black;
+    font-family: Arial, sans-serif;
+  }
+
+  #date{
+    text-align: center;
+    font-size: 3ch;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    max-width: 100px;
+    padding: 1rem;
+    color: black;
+    font-family: Arial, sans-serif;
+    
+  }
+
+  #temp{
+    text-align: center;
+    font-size: 3ch;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    max-width: 100px;
+    padding: 1rem;
+    color: black;
+  }
+
+.forecast-container{
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+  text-align: center;
+
+}
+
+.forecast-container{
+  text-align: center;
+  font-size: 3ch;
+  color: black;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css"></link>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather</h1>
+    
+<dl class='container'>
+  <dt class="city"></dt>
+  <dd id="city"></dd>
+  <dt class="date"></dt>
+  <dd class="circle-container" id="temp"></dd>
+  <img id ='icon'></img>  
+  <dd id="date"></dd>
+</dl>
+<dl>
+  <dt class="forecast-container">5 Day Forecast</dt>
+  <dd class='forecast-container' id="First-Forecast"></dd>
+  <dd class='forecast-container' id="Second-Forecast"></dd>
+  <dd class='forecast-container' id="Third-Forecast"></dd>
+  <dd class='forecast-container' id="Fourth-Forecast"></dd>
+  <dd class='forecast-container' id="Fifth-Forecast"></dd>
+</dl>
+<form>
+    <input type="text" placeholder="Input City"/>
+    <input type="button" class="btn btn-primary" type ="submit" value="Get Weather Info"/>
+</form>
+</body>
+</html>
