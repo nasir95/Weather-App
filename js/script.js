@@ -1,14 +1,17 @@
 const proxy = 'http://cors-anywhere.herokuapp.com/'
 
 //To show current date
-let options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+let options = {weekday: 'long', year: '2-digit', month: 'long', day: 'numeric'};
 let today = new Date();
 console.log(today);
 
 
     // Current weather 
-$('form').on('submit', (event) =>{
+$('form').on('click', (event) =>{
         event.preventDefault();
+        if(event.target.tagName !== 'INPUT'){
+            return;
+        }
         const userInput = $('input[type="text"]').val();
         $.ajax({ 
     //openweathermap current weather api
@@ -36,8 +39,11 @@ $('form').on('submit', (event) =>{
         )
     });
     // 5 day forecast weather
-    $('form').on('submit', (event) =>{
+    $('form').on('click', (event) =>{
         event.preventDefault();
+        if(event.target.tagName !== 'INPUT'){
+            return;
+        }
         const userInput = $('input[type="text"]').val();
         $.ajax({
     //openweathermap 5 day weather forecast api

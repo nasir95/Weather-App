@@ -25,17 +25,15 @@ body{
   text-align: center;
   justify-content: center;
   align-content: center;
+  margin: auto;
   }
 
 #city{
-    text-align: center;
     text-align: center;
     font-size: 3ch;
     height: 100px;
     display: grid;
     place-items: center;
-    max-width: 100px;
-    padding: 1rem;
     color: black;
     font-family: Arial, sans-serif;
   }
@@ -62,6 +60,13 @@ body{
     max-width: 100px;
     padding: 1rem;
     color: black;
+    display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
   }
 
 .forecast-container{
@@ -77,8 +82,15 @@ form{
 .forecast-container{
   text-align: center;
   font-size: 3ch;
+  display: grid;
+  place-items: center;
   color: black;
   font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
